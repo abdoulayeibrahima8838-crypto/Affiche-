@@ -105,7 +105,7 @@ def generate():
 
         client = get_client()
         response = client.models.generate_content(
-            model="gemini-2.5-flash-image",
+            model="gemini-3.1-flash-lite-image",
             contents=[prompt, image_produit],
         )
 
@@ -130,3 +130,4 @@ def generate():
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
+
